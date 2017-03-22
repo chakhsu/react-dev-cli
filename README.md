@@ -1,6 +1,6 @@
-## react-dev-cli
+# react-dev-cli
 
-###安装配置 Babel
+## 安装配置 Babel
 
 ```
 yarn add babel-core babel-loader --dev
@@ -18,7 +18,7 @@ vim .babelrc
 }
 ```
 
-###安装配置 ESLint
+## 安装配置 ESLint
 
 ```
 yarn add eslint eslint-loader --dev
@@ -40,14 +40,14 @@ vim .eslintrc
 }
 ```
 
-###安装配置 webpack
+## 安装配置 webpack
 
 ```
 yarn add webpack webpack-dev-server --dev
 yarn add html-webpack-plugin --dev
 ```
 
-###安装 React
+## 安装 React
 ```
 yarn add react react-dom --dev
 ```
