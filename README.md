@@ -65,7 +65,7 @@ yarn add react react-dom --dev
 ## 添加CSS样式
 
 ```
-yarn add style-loader css-loader --dev
+yarn add css-loader extract-text-webpack-plugin --dev
 ```
 
 
