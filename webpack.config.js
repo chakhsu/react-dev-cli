@@ -22,14 +22,14 @@ module.exports = {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          use: 'css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5] ',
+          use: 'css-loader?modules&importLoaders=1',
         }),
       },
       {
         test: /.less$/,
         use: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
-          use: 'css-loader?modules&localIdentName=[local]-[hash:base64:5]!less-loader',
+          use: 'css-loader?modules&importLoaders=1!less-loader',
         }),
       },
     ],
