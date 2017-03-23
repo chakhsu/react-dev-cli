@@ -19,14 +19,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          use: 'css-loader?modules&importLoaders=1&localIdentName=[local]',
-        }),
-      },
-      {
-        test: /.less$/,
+        test: /\.(less|css)$/,
         use: ExtractTextPlugin.extract({
           fallbackLoader: 'style-loader',
           use: 'css-loader?modules&importLoaders=1&localIdentName=[local]!less-loader',
