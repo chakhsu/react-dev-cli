@@ -1,0 +1,12 @@
+$color-red:red;
+
+$color-blue:blue;
+
+$color-green:green;
+
+.h1{
+	color:$color-red;
+	&:hover{
+		color:$color-green;
+	}
+}

@@ -19,10 +19,26 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(less|css)$/,
+        test: /\.(scss|css)$/,
         use: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          use: 'css-loader?modules&importLoaders=1&localIdentName=[local]!less-loader',
+          use:[
+            {
+              loader: 'css-loader',
+              options:{
+                modules:true,
+                importLoaders:1,
+                localIdentName:'[local]_[hash:base64:5]',
+                sourceMap: true,
+              }
+            },
+            {
+              loader:'sass-loader',
+              options:{
+                sourceMap: true,
+              }
+            },
+          ],
+          fallback: 'style-loader',
         }),
       },
     ],
